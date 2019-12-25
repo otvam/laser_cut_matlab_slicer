@@ -7,9 +7,9 @@ This **MATLAB** code helps you to realize a 3d object with **stacked laser cut p
 The example provided with the code is a **Porsche 917K race car**.
 
 <p float="middle">
-    <img src="readme_img/assemble_3d_1.png" width="200">
-    <img src="readme_img/assemble_3d_2.png" width="200">
-    <img src="readme_img/assemble_3d_3.png" width="200">
+    <img src="readme_img/assemble_3d_1.png" width="250">
+    <img src="readme_img/assemble_3d_2.png" width="250">
+    <img src="readme_img/assemble_3d_3.png" width="250">
 </p>
 
 If your are just interested by building the Porsche 917K, you just need [Porsche_917K.pdf](Porsche_917K.pdf) and [Porsche_917K.stl](Porsche_917K.stl).
@@ -19,13 +19,13 @@ If your are just interested by building the Porsche 917K, you just need [Porsche
 First take the STL file and define cut plane and visualize the contour (with the provided MATLAB tool).
 
 <p float="middle">
-    <img src="readme_img/slice_visualize.png" width="300">
+    <img src="readme_img/slice_visualize.png" width="500">
 </p>
 
 Then export the contour as PDF (with the provided MATLAB tool).
 
 <p float="middle">
-    <img src="readme_img/slice_export.png" width="300">
+    <img src="readme_img/slice_export.png" width="500">
 </p>
 
 With a vector graphic tool, edit, simplify, and improve the contour.
@@ -33,21 +33,21 @@ Export the results as bitmap raster, which each layer represents its own file.
 Bitmap format is used for compatibily, simplicity, and robustness.
 
 <p float="middle">
-    <img src="readme_img/slice_raster.png" width="300">
+    <img src="readme_img/slice_raster.png" width="500">
 </p>
 
 Transform the bitmap raster into a full 3d construction (with the provided MATLAB tool).
 
 <p float="middle">
-    <img src="readme_img/assemble_3d_1.png" width="200">
-    <img src="readme_img/assemble_3d_2.png" width="200">
-    <img src="readme_img/assemble_3d_3.png" width="200">
+    <img src="readme_img/assemble_3d_1.png" width="250">
+    <img src="readme_img/assemble_3d_2.png" width="250">
+    <img src="readme_img/assemble_3d_3.png" width="250">
 </p>
 
 With a vector graphic tool, edit the final version for laser cutting.
 
 <p float="middle">
-    <img src="readme_img/slice_vector.png" width="300">
+    <img src="readme_img/slice_vector.png" width="500">
 </p>
 
 With some patience (and some glue), assemble the model!
@@ -59,8 +59,8 @@ As a typical race car from the end of 60s, many version were produced.
 The version used for the sliced model is the car used by Team Salzburg in Le Mans 1970 (winner, car 23).
 
 <p float="middle">
-    <img src="readme_img/photo_front.jpg" width="300">
-    <img src="readme_img/photo_rear.jpg" width="300">
+    <img src="readme_img/photo_front.jpg" width="400">
+    <img src="readme_img/photo_rear.jpg" width="400">
 </p>
 
 The sliced model is at the **1:24 scale**. The model contains **2x18=36 parts** and the plate tickness is 4mm.
