@@ -20,17 +20,17 @@ FAQ
 Why a vector graphic tool is typically required and the exported contours cannot be used directly?
     The STL file containing the 3d object is sometimes not well formed, i.e. does not contain close volumes.
     For complex STL file, the contours need to be simplified manually for removing features.
-    The 'mathematical' slicing does not always provide the most beautiful results, some manual adaptions might improve the aspect.
+    The 'mathematical' slicing does not always provide the most beautiful results. Some manual adaptions might improve the aspect.
     However, in case of a high-quality STL file, the exported contours might be directly used.
 
 Why the assembly step is used bitmap images and not vector graphics?
     Not only the contours are need but also type of the curve (external boundaries or holes).
     The typical vector output format (e.g., pdf, eps, dxf) are difficult to parse in a robust way.
-    However, the code is written such that it would be easy to used a vector format parser instead of the bitmap one.
+    However, the code is written such that it would be easy to use a vector format parser instead of the bitmap one.
 
 Why the test file used for the slicing ('model.stp') is already composed of stacked plates?
     Of course, the original model should not be composted of stacked plates since such a model is the goal of this code.
-    However, for the used 3d model (Porsche 917K), there is not 3d model under a free licence.
+    However, for the used 3d model (Porsche 917K), there is not 3d model under a free license.
     Therefore, the model with stacked plates (i.e. the output model) is also used for the slicing (i.e. the input model).
 
 AUTHOR
