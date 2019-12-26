@@ -18,6 +18,8 @@ cut = data_tmp.cut;
 fv = data_tmp.fv;
 
 %% plot_data
+plot_data_3d.plot_stl = true;
+plot_data_3d.plot_line = true;
 plot_data_3d.pos_angle = [+40 -120];
 plot_data_3d.face_color = [0.8 0.8 1.0];
 plot_data_3d.edge_color = 'k';

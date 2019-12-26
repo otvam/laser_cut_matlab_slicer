@@ -32,6 +32,8 @@ end
 
 function plot_data = get_plot_data(pos_angle)
 
+plot_data.plot_stl = true;
+plot_data.plot_line = true;
 plot_data.pos_angle = pos_angle;
 plot_data.face_color = [0.8 0.8 1.0];
 plot_data.edge_color = 'k';
