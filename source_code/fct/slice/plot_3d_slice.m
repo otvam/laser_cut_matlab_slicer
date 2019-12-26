@@ -2,6 +2,8 @@ function plot_3d_slice(plot_data, fv, cut)
 %PLOT_3D_SLICE Plot a 3d triangulation with cut planes.
 %   PLOT_3D_SLICE(plot_data, fv, cut)
 %   plot_data - plot information (struct)
+%      plot_data.plot_stl - plot (or not) the STL file (boolean)
+%      plot_data.plot_line - plot (or not) the slices (vector)
 %      plot_data.pos_angle - view angle in 3d (vector)
 %      plot_data.face_color - face color of the triangulation (vector or string)
 %      plot_data.edge_color - edge color of the triangulation (vector or string)
@@ -25,21 +27,25 @@ figure()
 hold('on')
 
 % triangulation
-patch(...
-    'Faces', fv.faces,...
-    'Vertices', fv.vertices,...
-    'FaceColor', plot_data.face_color,...
-    'EdgeColor', plot_data.edge_color,...
-    'EdgeAlpha', plot_data.edge_alpha...
-    );
+if plot_data.plot_stl==true
+    patch(...
+        'Faces', fv.faces,...
+        'Vertices', fv.vertices,...
+        'FaceColor', plot_data.face_color,...
+        'EdgeColor', plot_data.edge_color,...
+        'EdgeAlpha', plot_data.edge_alpha...
+        );
+end
 
 % cut lines
-for i=1:length(cut)
-    cut_tmp = cut{i};
-    x = cut_tmp.pts(:,1);
-    y = cut_tmp.pts(:,2);
-    z = cut_tmp.pts(:,3);
-    plot3(x, y, z, 'Color', plot_data.line_color, 'LineWidth', plot_data.line_width)
+if plot_data.plot_line==true
+    for i=1:length(cut)
+        cut_tmp = cut{i};
+        x = cut_tmp.pts(:,1);
+        y = cut_tmp.pts(:,2);
+        z = cut_tmp.pts(:,3);
+        plot3(x, y, z, 'Color', plot_data.line_color, 'LineWidth', plot_data.line_width)
+    end
 end
 
 % axis
