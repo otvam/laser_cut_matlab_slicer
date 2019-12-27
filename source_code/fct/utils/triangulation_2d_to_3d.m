@@ -22,13 +22,21 @@ function [vertices, faces, bnd] = triangulation_2d_to_3d(vertices_2d, faces_2d, 
 n_vertices = size(vertices_2d, 1);
 
 % vertices: up, down
-vertices = [vertices_2d +(dz./2).*ones(n_vertices, 1); vertices_2d -(dz./2).*ones(n_vertices, 1)];
+vertices_up = [vertices_2d , +(dz./2).*ones(n_vertices, 1)];
+vertices_dw = [vertices_2d , -(dz./2).*ones(n_vertices, 1)];
+vertices = [vertices_up ; vertices_dw];
 
 % add faces: up, down, connecting
-faces = [faces_2d ; faces_2d+n_vertices; bnd_2d bnd_2d(:,1)+n_vertices ; bnd_2d+n_vertices bnd_2d(:,2)];
+faces_up = faces_2d(:, [1 2 3])+0.*n_vertices;
+faces_dw = faces_2d(:, [2 1 3])+1.*n_vertices;
+bnd_1 = [bnd_2d(:, [2 1]) , bnd_2d(:,1)+n_vertices];
+bnd_2 = [bnd_2d(:, [1 2])+n_vertices , bnd_2d(:,2)];
+faces = [faces_up ; faces_dw ; bnd_1 ; bnd_2];
 
 % add bnd: up, down
-bnd = [bnd_2d ; bnd_2d+n_vertices];
+bnd_up = bnd_2d+0.*n_vertices;
+bnd_dw = bnd_2d+1.*n_vertices;
+bnd = [bnd_up ; bnd_dw];
 
 % clean the redundant vertices
 [vertices, faces, bnd] = triangulation_clean(vertices, faces, bnd);
