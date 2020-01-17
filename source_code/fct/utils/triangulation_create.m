@@ -15,7 +15,7 @@ function [vertices, faces, bnd] = triangulation_create(c_cell, h_growth, h_min, 
 %   See also CONTOUR_CREATE, TRIANGULATION_2D_TO_3D, GENERATEMESH, GEOMETRYFROMMESH.
 
 %   Thomas Guillod.
-%   2019 - BSD License.
+%   2020 - BSD License.
 
 % for each contour, prepare the polygons
 for i=1:length(c_cell)
