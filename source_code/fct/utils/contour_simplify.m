@@ -10,7 +10,7 @@ function c_cell_out = contour_simplify(c_cell_in, simplify_tol)
 %   See also CONTOUR_CREATE, REDUCEM.
 
 %   Thomas Guillod.
-%   2019 - BSD License.
+%   2020 - BSD License.
 
 % simplify all the contours
 c_cell_out = {};

@@ -8,7 +8,7 @@ function c_cell = contour_create(img, scale)
 %   See also CONTOUR_SIMPLIFY, BWBOUNDARIES.
 
 %   Thomas Guillod.
-%   2019 - BSD License.
+%   2020 - BSD License.
 
 % find boundary
 bnd = bwboundaries(img);
