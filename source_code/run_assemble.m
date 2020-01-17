@@ -4,14 +4,14 @@ function run_assemble()
 %   See also GET_ASSEMBLE, PLOT_ASSEMBLE,.
 
 %   Thomas Guillod.
-%   2019 - BSD License.
+%   2020 - BSD License.
 
 close('all')
 addpath(genpath('fct'))
 
 %% data_img
 for i=1:11
-    img_data{i}.img = struct(...
+    img_data{i} = struct(...
         'img', imread(['data/data/' num2str(i) '.bmp']),...
         'scale', 174./2012,...
         'simplify_tol', 0.1,...
