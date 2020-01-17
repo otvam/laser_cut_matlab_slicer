@@ -5,9 +5,7 @@ function c_cell_out = contour_simplify(c_cell_in, simplify_tol)
 %      c_cell_in{i}.pts - contour points (matrix)
 %      c_cell_in{i}.is_cut - if the contour is a hole (boolean)
 %   simplify_tol - angular tolerance for contour simplification (scalar)
-%   c_cell_out - cell array with the simplified contours (cell)
-%      c_cell_out{i}.pts - contour points (matrix)
-%      c_cell_out{i}.is_cut - if the contour is a hole (boolean)
+%   c_cell_out - cell array with the simplified contours (cell of matrix)
 %
 %   See also CONTOUR_CREATE, REDUCEM.
 
@@ -18,9 +16,9 @@ function c_cell_out = contour_simplify(c_cell_in, simplify_tol)
 c_cell_out = {};
 for i=1:length(c_cell_in)
     c_tmp = c_cell_in{i};
-    [x_tmp, y_tmp] = reducem(c_tmp.pts(:,1), c_tmp.pts(:,2), simplify_tol);
+    [x_tmp, y_tmp] = reducem(c_tmp(:,1), c_tmp(:,2), simplify_tol);
     if (nnz(x_tmp)>0)&&(nnz(y_tmp)>0)
-        c_cell_out{end+1} = struct('pts', [x_tmp, y_tmp], 'is_cut', c_tmp.is_cut);
+        c_cell_out{end+1} = [x_tmp, y_tmp];
     end
 end
 
