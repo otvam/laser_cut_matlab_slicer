@@ -66,6 +66,11 @@ The version used for the sliced model is the car used by Team Salzburg in Le Man
 The sliced model is at the **1:24 scale**. The model contains **2x18=36 parts** and the plate thickness is 4mm.
 Of course, the model car be scaled to be smaller. A larger model will probably look too coarse.
 
+<p float="middle">
+    <img src="readme_img/proto_front.jpg" width="400">
+    <img src="readme_img/proto_rear.jpg" width="400">
+</p>
+
 ## More Info
 
 For the technical info about the workflow and the code, please read [source_code/README.txt](source_code/README.txt).
