@@ -12,7 +12,8 @@ The example provided with the code is a **Porsche 917K racecar**.
     <img src="readme_img/assemble_3d_3.png" width="250">
 </p>
 
-If you are just interested by building the Porsche 917K, you just need [Porsche_917K.pdf](Porsche_917K.pdf) and [Porsche_917K.stl](Porsche_917K.stl).
+If you are just interested by building the Porsche 917K, you just need [porsche_917K/porsche_917K.pdf](porsche_917K/porsche_917K.pdf).
+A 3D preview (STL format) is available in [porsche_917K/porsche_917K.stl](porsche_917K/porsche_917K.stl).
 
 ## Workflow
 
@@ -73,7 +74,7 @@ Of course, the model car be scaled to be smaller. A larger model will probably l
 
 ## More Info
 
-For the technical info about the workflow and the code, please read [source_code/README.txt](source_code/README.txt).
+For the technical info about the workflow and the MATLAB code, please read [matlab_slicer/README.txt](matlab_slicer/README.txt).
 
 ## But I don't have MATLAB
 
@@ -86,6 +87,7 @@ Then, I might make a version using numpy/matplotlib, opencv/shapely, and triangl
 
 **Thomas Guillod** - [GitHub Profile](https://github.com/otvam)
 
-## License
+## Licenses
 
-This project is licensed under the **BSD License**, see [LICENSE.md](LICENSE.md).
+* This MATLAB source code is licensed under the **BSD License**, see [LICENSE.md](LICENSE.md).
+* The Porsche 917K model is licensed under the **Creative Commons — Attribution 4.0 International (CC BY 4.0)**.
