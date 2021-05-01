@@ -72,9 +72,9 @@ Of course, the model car be scaled to be smaller. A larger model will probably l
     <img src="readme_img/proto_rear.jpg" width="400">
 </p>
 
-## More Info
+## Source Code Documentation
 
-For the technical info about the workflow and the MATLAB code, please read [matlab_slicer/README.txt](matlab_slicer/README.txt).
+For the technical details about the workflow and the MATLAB code, please read [matlab_slicer/README.txt](matlab_slicer/README.txt).
 
 ## But I don't have MATLAB
 
