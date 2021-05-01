@@ -90,4 +90,4 @@ Then, I might make a version using numpy/matplotlib, opencv/shapely, and triangl
 ## Licenses
 
 * This MATLAB source code is licensed under the **BSD License**, see [LICENSE.md](LICENSE.md).
-* The Porsche 917K model is licensed under the **Creative Commons — Attribution 4.0 International (CC BY 4.0)**.
+* The Porsche 917K model is licensed under the **Creative Commons — CC BY 4.0**.
