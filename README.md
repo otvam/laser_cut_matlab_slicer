@@ -6,8 +6,8 @@
 ![status - unmaintained](https://img.shields.io/badge/status-unmaintained-red)
 
 This **MATLAB** code helps you to realize a 3d object with **stacked laser cut plates**:
-* Extract the **interesection** of a 3d STL object and a **cut plane**, visualize, and export the results as PDF.
-* Create **3d meshed parts from 2d parts**, assemble the plates into a **3d contruction**, and visualize.
+* Extract the **intersection** of a 3d STL object and a **cut plane**, visualize, and export the results as PDF.
+* Create **3d meshed parts from 2d parts**, assemble the plates into a **3d construction**, and visualize.
 
 The example provided with the code is a **Porsche 917K racecar**.
 
