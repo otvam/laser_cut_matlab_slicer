@@ -61,16 +61,13 @@ With some patience (and some glue), assemble the model!
 ## Porsche 917K
 
 The example model is a **Porsche 917K**, one of the most iconic racecar ever produced.
-As a typical racecar from the end of 60s, many versions were produced.
-The version used for the sliced model is the car used by Team Salzburg in Le Mans 1970 (winner, car 23).
-
-<p float="middle">
-    <img src="readme_img/photo_front.jpg" width="400">
-    <img src="readme_img/photo_rear.jpg" width="400">
-</p>
-
 The sliced model is at the **1:24 scale**. The model contains **2x18=36 parts** and the plate thickness is 4mm.
 Of course, the model car be scaled to be smaller. A larger model will probably look too coarse.
+
+<p float="middle">
+    <img src="readme_img/proto_front.jpg" width="400">
+    <img src="readme_img/proto_rear.jpg" width="400">
+</p>
 
 ## Source Code Documentation
 
